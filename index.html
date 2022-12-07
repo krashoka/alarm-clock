@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alarm Clock</title>
+
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1 id="clock"></h1>
+      <h3>Set Alarm <button id="addAlarm">+</button></h3>
+      <div id="setAlarm" style="display: none; margin-bottom: 20px">
+        Set Time <input type="time" id="time" /> Set Day
+        <select id="day">
+          <option value="Sunday">Sunday</option>
+          <option value="Monday">Monday</option>
+          <option value="Tuesday">Tuesday</option>
+          <option value="Wednesday">Wednesday</option>
+          <option value="Thursday">Thursday</option>
+          <option value="Friday">Friday</option>
+          <option value="Saturday">Saturday</option>
+        </select>
+        <button id="saveAlarm">SAVE</button>
+      </div>
+      <div id="alarms"></div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <h3>It's time</h3>
+        <br />
+        <button id="stop">STOP</button>
+        <button id="snooze">Snooze for 5 minutes</button>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="./index.js"></script>
